@@ -1,0 +1,12 @@
+<div class="popup-modal">
+    <div class="popup-content">
+      <div class="popup-header">
+        <h2>Please enter your name</h2>
+        <img src="../../assets/img/x-close.png" alt="close-icon" width="16" height="16" (click)="closePopup()">
+      </div>
+      <div class="form-field">
+        <input type="text" [(ngModel)]="userName" placeholder="Your Name" />
+        <button (click)="saveName()">Submit</button>
+      </div>
+    </div>
+  </div>

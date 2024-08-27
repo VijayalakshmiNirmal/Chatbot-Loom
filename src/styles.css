@@ -1,0 +1,415 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: proxima-nova-bold;
+    src: url('./assets/fonts/proxima-font/proxima-nova-bold.woff');
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('./assets/fonts/proxima-font/proxima-nova-regular.ttf');
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url('./assets/fonts/OpenSans-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "proxima-nova", sans-serif;
+    background: #F5F5F5;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    /* background: #F5F5F5; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* height: calc(100vh - 100px); */
+    padding: 10px;
+
+
+}
+
+.header {
+    height: 80px;
+    border-bottom: 1px solid rgba(135, 135, 135, 0.25);
+    gap: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 24px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-hedaer {
+    font-size: 28px;
+}
+h1{
+    font-size: 20px;
+}
+ p{
+    font-size: 14px;
+ }
+.logo {
+    position: absolute;
+    top: 36%;
+    left: 2%;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.header2 {
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+.text-para {
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.record-section {
+    margin: 20px;
+}
+
+.btn-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.start-btn,
+.stop-btn,
+.clr-btn,.eval-btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.start-btn {
+    background: #E31837;
+    color: #fff;
+    border: 1px solid #E31837;
+}
+
+.stop-btn {
+    border: 1px solid #000;
+
+}
+
+.clr-btn {
+    background: #e6bbbb;
+    border: 1px solid #E31837;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.transcript {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    justify-content: center;
+    max-width: 800px;
+    /* max-width: 400px; */
+    margin: 20px;
+
+}
+
+.record {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.para {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #E31837;
+    font-weight: 700;
+}
+
+.header2 {
+    color: #E31837;
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+}
+.result-div h1,
+.result-div h2,
+.result-div h3,
+.result-div h4,
+.result-div h5,
+.result-div h6,
+.result-div b{
+    font-weight: 700;
+    color: #E31807;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+ul,li{
+    padding-bottom: 6px;
+}
+.result-div p{
+    font-family: "proxima-nova", sans-serif;
+    color: #1a1414;
+    padding-bottom: 20px;
+}
+.clear-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* new */
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: proxima-nova-bold;
+    src: url('./assets/fonts/proxima-font/proxima-nova-bold.woff');
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url('./assets/fonts/proxima-font/proxima-nova-regular.ttf');
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url('./assets/fonts/OpenSans-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "proxima-nova", sans-serif;
+    background: #F5F5F5;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    /* background: #F5F5F5; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* height: calc(100vh - 100px); */
+    padding: 10px;
+
+
+}
+
+.header {
+    height: 80px;
+    border-bottom: 1px solid rgba(135, 135, 135, 0.25);
+    gap: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 24px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-hedaer {
+    font-size: 28px;
+}
+h1{
+    font-size: 20px;
+}
+ p{
+    font-size: 14px;
+ }
+.logo {
+    position: absolute;
+    top: 36%;
+    left: 2%;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.header2 {
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+.text-para {
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.record-section {
+    margin: 20px;
+}
+
+.btn-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.start-btn,
+.stop-btn,
+.clr-btn,.eval-btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.start-btn {
+    background: #E31837;
+    color: #fff;
+    border: 1px solid #E31837;
+}
+
+.stop-btn {
+    border: 1px solid #000;
+
+}
+
+.clr-btn {
+    background: #e6bbbb;
+    border: 1px solid #E31837;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.transcript {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    justify-content: center;
+    max-width: 800px;
+    /* max-width: 400px; */
+    margin: 20px;
+
+}
+
+.record {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.para {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #E31837;
+    font-weight: 700;
+}
+
+.header2 {
+    color: #E31837;
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+}
+.result-div h1,
+.result-div h2,
+.result-div h3,
+.result-div h4,
+.result-div h5,
+.result-div h6,
+.result-div b{
+    font-weight: 700;
+    color: #E31807;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+ul,li{
+    padding-bottom: 6px;
+}
+.result-div p{
+    font-family: "proxima-nova", sans-serif;
+    color: #1a1414;
+    padding-bottom: 20px;
+}
+.clear-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 520px){
+    .main-header{
+        display: none;
+    }
+    .logo{
+        position: unset;
+    }
+}
+.subheading{
+    color: #A61242;
+}
+.h1{
+    font-size: 20px;
+    color: #A61242;
+}
+.h2{
+    font-size: 18px;
+    color: #A61242;
+}
+.h3{
+    font-size: 16px;
+    color: #A61242;
+}
+.start-btn{
+    margin-top: 20px;
+}

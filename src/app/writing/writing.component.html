@@ -1,0 +1,24 @@
+<div class="writingContainer">
+    <h2>Writing Test</h2>
+  
+    <!-- Static Image Display -->
+    <div class="imageContent">
+      <h3>Pie Chart</h3>
+      <img src="assets/img/writingQuestion.png" alt="Image Preview" height="350">
+    </div>
+  
+    <!-- User Description Input -->
+    <div class="descriptionContent">
+      <label for="userDescription">User Description:</label>
+      <textarea id="userDescription" [(ngModel)]="userDescription" rows="10" cols="30"></textarea>
+    </div>
+  
+    <!-- Analyze Button -->
+    <button (click)="analyzeImage()">Analyze</button>
+  
+    <!-- Evaluation Result Display -->
+    <div *ngIf="evaluationResult">
+      <h3>Evaluation Result:</h3>
+      <p>{{ evaluationResult }}</p>
+    </div>
+  </div>

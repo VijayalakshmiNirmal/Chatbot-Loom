@@ -1,0 +1,15 @@
+<div class="homepage-container">
+  <div class="wrapper">
+    <img src="../../assets/img/speaking.png" alt="speaking-img" width="200" height="200">
+    <h1>Hi there. Welcome!</h1>
+    <div class="button-grp">
+      <button class="speaking" (click)="popup()">Speaking</button>
+      <button class="writing" (click)="navigateToWriting()">Writing</button>
+    </div>
+  </div>
+
+  <!-- Include the PopupWindowComponent -->
+  <app-popup-window *ngIf="showPopup" (nameSubmitted)="handleNameSubmitted($event)" (close)="closePopup()"></app-popup-window>
+
+  
+</div>
